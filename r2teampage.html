@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Join Squad</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <nav class="navbar">🎯 Squad Join Page</nav>
+  <button class="open-btn" onclick="toggleSidebar()">☰</button>
+  <div class="sidebar" id="sidebar">
+    <button class="close-btn" onclick="toggleSidebar()">✖</button>
+    <ul><li>Home</li><li>Back</li></ul>
+  </div>
+
+  <div class="container">
+    <h2>Team Details</h2>
+    <div id="teamInfo"></div>
+
+    <div id="joinSection">
+      <h3>Join This Team</h3>
+      <input type="text" id="mateName" placeholder="InGame Name" />
+      <input type="text" id="mateUID" placeholder="InGame UID" />
+      <button id="joinBtn" onclick="joinTeam()">Join</button>
+    </div>
+
+    <div id="teamList">
+      <h3>Joined Members:</h3>
+      <ul id="memberList"></ul>
+    </div>
+
+    <div id="completedMsg" style="display:none;">
+      <button class="success-btn" id="successMessage"></button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

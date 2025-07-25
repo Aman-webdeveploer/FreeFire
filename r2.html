@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Team Leader Registration</title>
+  <link rel="stylesheet" href="r2.css" />
+</head>
+<body>
+
+  <nav class="navbar">🎮 Squad Leader Panel</nav>
+  <button class="open-btn" onclick="toggleSidebar()">☰</button>
+  <div class="sidebar" id="sidebar">
+    <button class="close-btn" onclick="toggleSidebar()">✖</button>
+    <h3>Menu</h3>
+    <ul><li>Home</li><li>Contact</li></ul>
+  </div>
+
+  <div class="container">
+    <h2>Leader Registration</h2>
+    <input type="text" id="teamName" placeholder="Team Name" />
+    <input type="text" id="leaderName" placeholder="InGame Name" />
+    <input type="text" id="leaderUID" placeholder="InGame UID" />
+    <button onclick="registerLeader()">Register & Generate Link</button>
+
+    <div id="referralSection" style="display:none;">
+      <p>Share this link:</p>
+      <input type="text" id="referralLink" readonly />
+    </div>
+  </div>
+
+  <script src="r2.js"></script>
+</body>
+</html>
